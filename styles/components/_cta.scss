@@ -1,0 +1,67 @@
+
+
+.cta {
+    padding: $base-unit * 2;
+
+    text-align: center;
+
+    background: $color-secondary;
+
+    &-event {
+            display: inline-block;
+
+            padding: $base-unit $base-unit*2;
+            margin-bottom: $base-unit;
+
+            transition: 0.3s all ease;
+            text-decoration: none;
+
+            color: $color-secondary;
+            border-radius: 3px;
+            background: $color-teritiary;
+            box-shadow: 0px 17px 10px -10px rgba($color-secondary, 0.15);
+
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        &:hover {
+            transform: translate(0px, -2px);
+
+            color: lighten($color-secondary,2%);
+            background: lighten($color-teritiary, 2%);
+            box-shadow: 0px 30px 20px -20px rgba($color-secondary, 0.35);
+        }
+
+        &--return {
+        }
+
+        &--next {
+            background: $color-primary;
+
+            &:hover {
+                background: lighten($color-primary, 2%);
+            }
+        }
+    }
+}
+
+.cta__button, input[type="submit"] {
+    width: 100%;
+    max-width: $base-unit * 30;
+    margin: 0 auto;
+    padding: $base-unit * 2;
+
+    cursor: pointer;
+    transition: 0.4s all ease;
+
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+        color: $color-secondary;
+        background: $color-primary;
+    }
+}

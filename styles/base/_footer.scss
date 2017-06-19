@@ -1,0 +1,37 @@
+/**
+* -----------------------------------------------------------------------------
+* $FOOTER
+* -----------------------------------------------------------------------------
+*/
+
+footer {
+    padding: $base-unit*2;
+
+    text-align: center;
+
+    color: $color-secondary;
+    background: $color-primary;
+
+    @include tablet {
+        padding: $base-unit*2;
+    }
+
+    & a {
+        color: $color-secondary;
+
+        font-weight: $font-weight--bold;
+
+        &:hover, &:active {
+            color: lighten($color-secondary, 5%);
+        }
+    }
+
+    & p {
+        margin-bottom: $base-unit;
+        font-family: $font-family--default;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

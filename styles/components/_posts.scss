@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $POSTS
+ * -----------------------------------------------------------------------------
+ */
+
+.type-post {
+    margin-bottom: $base-unit*2;
+    padding-bottom: $base-unit*2;
+    border-bottom: 1px dashed $color-secondary;
+
+    &:first-of-type {
+        padding-top: $base-unit*2;
+        border-top: 1px dashed $color-secondary;
+    }
+
+    & a.view-article {
+        margin-top: $base-unit*2;
+        display: block;
+        font-weight: 700;
+    }
+}

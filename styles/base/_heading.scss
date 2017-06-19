@@ -1,0 +1,39 @@
+/**
+* -----------------------------------------------------------------------------
+* $HEADING
+* -----------------------------------------------------------------------------
+*/
+
+/**
+ * Styles for the `h1` to `h6` elements.
+ */
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: $base-unit * 2;
+}
+
+h2 {
+    margin-bottom: $base-unit * 1.8;
+
+}
+
+h3 {
+    margin-bottom: $base-unit * 1.6;
+
+}
+
+h4 {
+    margin-bottom: $base-unit * 1.4;
+}
+
+h5 {
+    margin-bottom: $base-unit * 1.2;
+}
+
+h6 {
+    margin-bottom: $base-unit * 1;
+}

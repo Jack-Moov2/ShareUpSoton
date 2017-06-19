@@ -1,0 +1,17 @@
+
+
+.tablepress {
+    & .column-2, & .column-3, .column-5 {
+        display: none;
+        @include tablet {
+            display: table-cell;
+        }
+    }
+
+    & .dataTables_info {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+}

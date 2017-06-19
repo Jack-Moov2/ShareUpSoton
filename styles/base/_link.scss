@@ -1,0 +1,48 @@
+/**
+* -----------------------------------------------------------------------------
+* $LINKS
+* -----------------------------------------------------------------------------
+*/
+
+a {
+    padding-bottom: $base-unit/4;
+
+    transition: 0.4s all ease;
+    text-decoration: none;
+
+    color: $color-secondary;
+
+    &:hover {
+        color: darken($color-primary, 15%);
+    }
+
+}
+
+.link {
+
+}
+
+.link--signup, #user-submitted-post {
+    padding: $base-unit/2 $base-unit;
+
+    transition: 0.4s all ease;
+
+    color: $color-secondary;
+
+    border: 2px solid $color-secondary;
+
+    @include tablet {
+        padding: $base-unit $base-unit*2;
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        background: lighten($color-secondary, 5%);
+        cursor: pointer;
+    }
+}
+
+#user-submitted-post {
+	background: $color-primary;
+}

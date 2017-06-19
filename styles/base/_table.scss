@@ -1,0 +1,17 @@
+/**
+* -----------------------------------------------------------------------------
+* $TABLE
+* -----------------------------------------------------------------------------
+*/
+
+.tablepress tfoot th, .tablepress thead th {
+    background-color: $color-primary;
+}
+
+.tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
+    background-color: $color-primary;
+}
+
+.dataTables_wrapper, .tablepress, table {
+    max-width: 100%;
+}

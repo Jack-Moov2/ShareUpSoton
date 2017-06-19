@@ -1,0 +1,97 @@
+{
+    "project_logo": "../img/logo.svg",
+    "project_favicon": "../img/icons/favicon.png",
+    "project_name": null,
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": "ShareUp",
+    "client_url": "http://www.shareupsoton.co.uk",
+    "creators": [
+        {
+            "name": "Moov2",
+            "url": "http://www.moov2.com"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00FF78",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#292623",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "../style.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "events",
+            "title": "Events",
+            "components": [
+                {
+                    "group": "events",
+                    "name": "event-post",
+                    "title": "Event Post"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "ghost-button",
+                    "title": "Ghost Button",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "images",
+            "title": "Images",
+            "components": [
+                {
+                    "group": "images",
+                    "name": "social-media",
+                    "title": "Social Media",
+                    "options": {
+                        "sample_dark_background": false
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "1.8.1"
+}

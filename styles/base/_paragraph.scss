@@ -1,0 +1,16 @@
+/**
+* -----------------------------------------------------------------------------
+* $PARAGRAPH
+* -----------------------------------------------------------------------------
+*/
+
+p {
+    font-family: $font-family--body;
+    font-size: $font-size--default;
+    margin-bottom: $base-unit * 2;
+    margin-top: 0;
+
+    @include tablet {
+        margin-bottom: $base-unit * 2;
+    }
+}

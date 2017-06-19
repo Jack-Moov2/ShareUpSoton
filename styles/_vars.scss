@@ -1,0 +1,23 @@
+/**
+* -----------------------------------------------------------------------------
+* $VARS
+* -----------------------------------------------------------------------------
+*/
+
+
+
+$base-unit : 12px;
+
+$font-family--default : 'Montserrat', sans-serif;
+$font-family--body : 'Roboto', sans-serif;
+
+$font-size--default : $base-unit * 1.5;
+
+$color-primary: #00FF78;
+$color-secondary: #292623;
+$color-teritiary: #FF974F;
+$color-white: #FFFFFF;
+
+$color-hr : rgba($color-white, 0.15);
+
+$font-weight--bold : 700;

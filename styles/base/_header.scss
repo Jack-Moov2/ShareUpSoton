@@ -1,0 +1,60 @@
+/**
+* -----------------------------------------------------------------------------
+* $HEADER
+* -----------------------------------------------------------------------------
+*/
+
+header {
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.35);
+    background: lighten($color-secondary, 2%);
+
+    min-height: $base-unit*6;
+
+    padding: $base-unit*1 $base-unit*3 $base-unit*2;
+
+    & a {
+        color: $color-white;
+
+    }
+
+    & nav ul {
+        padding: $base-unit;
+
+        @include desktop {
+            float: left;
+        }
+    }
+
+    & li {
+        font-size: 1.8rem;
+        margin-bottom: $base-unit;
+
+        display: block;
+
+        @include tablet {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
+    @include tablet {
+        position: relative;
+        top: 0;
+        bottom: auto;
+
+        -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+
+        & ul {
+            vertical-align: middle;
+        }
+    }
+
+    @include desktop {
+        padding: $base-unit*2;
+    }
+}

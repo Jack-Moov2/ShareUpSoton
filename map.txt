@@ -1,0 +1,12 @@
+<div class="responsive-map">
+    <?php echo(types_render_field( "google-map-embed-code", array( 'raw' => true) )); ?>
+</div>
+
+
+<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+<!-- post thumbnail -->
+    <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+    <?php the_post_thumbnail( 'featured' );?>
+    <?php endif; ?>
+<!-- /post thumbnail -->
+</a>

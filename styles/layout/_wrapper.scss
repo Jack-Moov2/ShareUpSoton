@@ -1,0 +1,65 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $WRAPPER
+ * -----------------------------------------------------------------------------
+ */
+
+
+ $ignoredItems:
+   header,
+   footer
+ ;
+
+
+.wrapper {
+    width: 100%;
+
+    color: $color-secondary;
+    background: $color-white;
+
+    & > * {
+        max-width: 95%;
+        margin: 0 auto;
+
+        @include not($ignoredItems) {
+            max-width: 95%;
+
+            @include tablet {
+                max-width: 80%;
+            }
+            @include desktop {
+                max-width: 40%;
+            }
+        }
+    }
+
+    & main, & .events__post {
+        padding-top: $base-unit;
+        padding-bottom: $base-unit;
+
+        @include tablet {
+            padding-top: $base-unit * 3;
+            padding-bottom: $base-unit * 3;
+        }
+
+    }
+
+    .page-template-template-submit & {
+        padding-top: $base-unit*8;
+        padding-bottom: $base-unit*8;
+    }
+
+    .page-template-template-submit & > * {
+
+        @include not($ignoredItems) {
+            max-width: 95%;
+
+            @include tablet {
+                max-width: 80%;
+            }
+            @include desktop {
+                max-width: 60%;
+            }
+        }
+    }
+}

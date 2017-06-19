@@ -1,0 +1,21 @@
+/**
+* -----------------------------------------------------------------------------
+* $SELECTION
+* -----------------------------------------------------------------------------
+*/
+
+::selection {
+	background: rgba($color-primary, 0.8);
+	color: $color-secondary;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background: rgba($color-primary, 0.8);
+	color: $color-secondary;
+	text-shadow:none;
+}
+::-moz-selection {
+	background: rgba($color-primary, 0.8);
+	color: $color-secondary;
+	text-shadow:none;
+}

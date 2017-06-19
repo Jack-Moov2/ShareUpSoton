@@ -1,0 +1,64 @@
+/**
+* -----------------------------------------------------------------------------
+* $FORM
+* -----------------------------------------------------------------------------
+*/
+
+form {
+    & select,
+    & option,
+    & textarea,
+    & input {
+        font-family: $font-family--default;
+    }
+}
+
+div#user-submitted-posts fieldset {
+    margin-top: $base-unit*5;
+    margin-bottom: $base-unit*5;
+}
+
+.form__content {
+    & a {
+        font-weight: $font-weight--bold;
+    }
+}
+
+input[type="submit"] {
+    background: $color-secondary;
+}
+
+.usp-content {
+	border: 1px solid $color-secondary !important;
+    padding: $base-unit*2 !important;
+}
+
+.usp-title {
+    width: 100%;
+
+    @include desktop {
+        width: 70%;
+        float: left;
+    }
+
+    & input {
+        width: 100% !important;
+
+        @include desktop {
+            width: 95% !important;
+        }
+    }
+}
+
+.usp-category {
+    width: 100%;
+    clear: both;
+    margin-top: 0 !important;
+
+    @include desktop {
+        margin-top: 60px !important;
+        width: 30%;
+        float: left;
+        clear: none;
+    }
+}

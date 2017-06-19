@@ -1,0 +1,20 @@
+/**
+* -----------------------------------------------------------------------------
+* $HR
+* -----------------------------------------------------------------------------
+*/
+
+hr {
+    width: 100%;
+
+    color: $color-hr;
+    border-color: $color-hr;
+    background: $color-hr;
+
+    .background--white & {
+        color: $color-secondary;
+        border-color: $color-secondary;
+        background: $color-secondary;
+    }
+
+}

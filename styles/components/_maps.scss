@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $MAPS
+ * -----------------------------------------------------------------------------
+ */
+
+/** Code from https://getflywheel.com/layout/how-to-add-a-responsive-google-map-in-wordpress/ */
+
+.responsive-map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-bottom: $base-unit*2;
+}
+.responsive-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

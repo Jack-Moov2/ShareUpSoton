@@ -1,0 +1,84 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $EVENTS
+ * -----------------------------------------------------------------------------
+ */
+
+.events {
+    & nav {
+        margin-bottom: $base-unit * 2;
+    }
+
+    & img[src$=".svg"] {
+        width: 20%;
+        max-width: 50px;
+        margin-left: $base-unit;
+        margin-right: $base-unit;
+
+        @include tablet {
+            margin-left: 0;
+            margin-right: $base-unit*2;
+        }
+    }
+}
+
+.events__post {
+    border-bottom: 1px solid $color-secondary;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @include desktop {
+        & .wp-post-image {
+            position: absolute;
+            top: 10%;
+            left: -300px;
+        }
+    }
+
+    &:last-child {
+        border-bottom: 1px solid rgba(0,0,0,0);
+    }
+}
+
+.events__logo {
+    text-align: center;
+    margin-bottom: $base-unit*2;
+}
+
+.past, .future {
+    & h2:after {
+        content: "";
+        display: inline-block;
+        width: $base-unit*1.5;
+        height: $base-unit*1.5;
+        background: black;
+        margin-left: $base-unit;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin-bottom: $base-unit/2;
+    }
+}
+
+.past {
+    & h2:after {
+        background: $color-teritiary;
+    }
+
+    & a {
+        transition: 0.4s all ease;
+        text-decoration: none;
+
+        color: $color-secondary;
+
+        &:hover {
+            color: $color-teritiary;
+        }
+    }
+}
+
+.future {
+    & h2:after {
+        background: $color-primary;
+    }
+}
